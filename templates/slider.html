@@ -1,0 +1,10 @@
+<div ui-slider="{range: true}"
+     min="{{::slider.min}}"
+     max="{{::slider.max}}"
+     step="100000"
+     ng-model="slider.range">
+</div>
+<div>
+    <span>{{ slider.range[0] | formattedDate:'LL' }}</span>
+    <span class="pull-right">{{ slider.range[1] | formattedDate: 'LL' }}</span>
+</div>

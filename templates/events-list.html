@@ -1,0 +1,11 @@
+<table class="table">
+    <tr>
+        <th>Date</th><th>Occasion</th><th>Invited Count</th>
+    </tr>
+    <tr ng-repeat="event in eventsList.events"
+        ng-class="{danger: event.cancelled}">
+        <td class="col-xs-4">{{::event.date | formattedDate:'LL'}}</td>
+        <td class="col-xs-4">{{::event.occasion}}</td>
+        <td class="col-xs-4">{{::event.invited_count}}</td>
+    </tr>
+</table>
